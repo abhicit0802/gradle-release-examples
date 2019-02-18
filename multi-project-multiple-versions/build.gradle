@@ -24,6 +24,10 @@ allprojects {
     }
 
     release {
+        println "****************************"
+        println $name
+        println $version
+        println "****************************"
         tagTemplate = '$name-$version'
     }
 
