@@ -24,10 +24,10 @@ allprojects {
     }
 
     release {
-        println "****************************"
-        println $name
-        println $version
-        println "****************************"
+        println "******************"
+        println project.name
+        println project.version
+        println "******************"
         tagTemplate = '$name-$version'
     }
 
@@ -43,4 +43,4 @@ allprojects {
     afterReleaseBuild.dependsOn printversion
 }
 
-wrapper.gradleVersion = '2.7'
+wrapper.gradleVersion = '4.10'
